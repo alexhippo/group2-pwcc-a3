@@ -124,7 +124,7 @@ const Acknowledgements = styled.div`
 
 export const Footer = () => {
   return (
-    <StyledFooter>
+    <StyledFooter id="footer">
       <LogoLink href="/" aria-label="Visit SBS On Demand homepage">
         <LogoImage src="/images/logo.png" alt="SBS on demand" />
       </LogoLink>
@@ -176,7 +176,7 @@ export const Footer = () => {
         </PopularLinks>
         <OtherLinksContainer>
           <OtherLinks>
-            <a href="/adio-description">Audio Description</a>
+            <a href="/audio-description">Audio Description</a>
             <a href="/copyright">Copyright</a>
             <a href="terms-and-conditions">Terms & Conditions</a>
             <a href="/privacy">Privacy</a>

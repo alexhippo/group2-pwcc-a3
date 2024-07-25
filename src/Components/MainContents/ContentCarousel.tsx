@@ -89,9 +89,8 @@ const RightContent = styled.ul<{ active: boolean }>`
 const LeftButton = styled.button`
   position: absolute;
   left: 0px;
-  top: 85%;
-  height: 200px;
-  width: 50px;
+  height: 380px;
+  width: 60px;
   border: none;
   background-color: transparent;
   color: white;
@@ -116,7 +115,7 @@ const LeftButton = styled.button`
   }
 
   > span {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   &:hover,
@@ -129,9 +128,8 @@ const LeftButton = styled.button`
 const RightButton = styled.button`
   position: absolute;
   right: 0px;
-  top: 85%;
-  height: 200px;
-  width: 50px;
+  height: 380px;
+  width: 60px;
   border: none;
   background-color: transparent;
   color: white;
@@ -156,7 +154,7 @@ const RightButton = styled.button`
   }
 
   > span {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   &:hover,
