@@ -7,6 +7,36 @@ const HeaderContainer = styled.header`
   background-color: black;
   padding: 0px 24px;
 `
+const SkipToContentButton = styled.a`
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  margin: 0px 4px;
+  background-color: transparent;
+  color: white;
+  height: 35px;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 3px 12px;
+  text-decoration: none;
+
+  font-size: 0.875rem;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+
+  position: fixed;
+  opacity: 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: black;
+    background-color: white;
+    opacity: 1;
+  }
+`
 
 const LogoImage = styled.img`
   width: 160px;
@@ -124,6 +154,8 @@ export const Header = () => {
     <HeaderContainer>
       <DesktopHeader>
         <NavContainer>
+          <SkipToContentButton href="#main">Skip to main content</SkipToContentButton>
+          <SkipToContentButton href="#footer">Skip to footer</SkipToContentButton>
           <h1>
             <a href="/" aria-label="Visit SBS On Demand homepage">
               <LogoImage src="/images/logo.png" alt="SBS On Demand" />
